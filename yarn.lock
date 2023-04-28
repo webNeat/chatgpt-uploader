@@ -3909,6 +3909,11 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-dye@^3.0.0-alpha.1:
+  version "3.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/react-dye/-/react-dye-3.0.0-alpha.1.tgz#ca0c4e82952574b9828f45dfd72e95b8e7ee91df"
+  integrity sha512-GD9rIx1L34xQ7jZgLfABwluZeFfp98ehuy7VXQQRnflaZxFE0tPckPmqeOiUQVNno60UKZg98H6o8GNFe7goFQ==
+
 react-error-overlay@6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"

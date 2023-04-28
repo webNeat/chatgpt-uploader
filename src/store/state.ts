@@ -27,6 +27,6 @@ export const State = z.object({
   config: Config.default({}),
   ui: UserInterface.default({}),
   files: z.array(File).default([]),
-  errors: z.array(z.string()).default([]),
+  errors: z.array(z.coerce.string()).default([]),
 })
 export type State = z.infer<typeof State>

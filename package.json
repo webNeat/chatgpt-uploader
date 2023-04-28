@@ -1,8 +1,8 @@
 {
   "name": "chatgpt-uploader",
   "displayName": "Chatgpt uploader",
-  "version": "0.0.1",
-  "description": "Send multiple files or directories into ChatGPT prompt",
+  "version": "1.0.0",
+  "description": "A browser extension that let's you send entire projects to ChatGPT in a couple of clicks.",
   "author": "Amine Ben hammou <webneat@gmail.com>",
   "scripts": {
     "dev": "plasmo dev",
@@ -14,6 +14,7 @@
     "plasmo": "0.68.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-dye": "^3.0.0-alpha.1",
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "redux-neat": "^1.0.0-beta.8",

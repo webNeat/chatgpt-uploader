@@ -28,7 +28,7 @@ export function Toolbar() {
           </IconButton>
           {files.length > 0 && (
             <Button className="flex items-center gap-2" onClick={() => startSending(files, config)}>
-              <icons.Start className="text-white" />
+              <icons.Start className="h-6 w-6" />
               <p>Start upload</p>
             </Button>
           )}
@@ -37,7 +37,7 @@ export function Toolbar() {
       {isUploading && (
         <div className="flex flex-grow gap-2 justify-center">
           <Button className="flex items-center gap-2" onClick={() => stopSending()}>
-            <icons.Stop />
+            <icons.Stop className="h-6 w-6" />
             <p>Pause upload</p>
           </Button>
         </div>
@@ -46,6 +46,11 @@ export function Toolbar() {
         <div className="p-2">
           {messagesCount} messages ~ {duration}
         </div>
+      )}
+      {!isUploading && files.length > 0 && (
+        <Button onClick={() => actions.files.clear()} className="rounded-md">
+          <icons.DeleteFiles className="h-6 w-6" />
+        </Button>
       )}
     </div>
   )

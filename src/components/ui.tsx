@@ -1,4 +1,4 @@
-import dye from '~libs/react-dye'
+import dye from 'react-dye'
 
 export const Container = dye('flex flex-col mb-2 w-full lg:mx-auto lg:max-w-2xl xl:max-w-3xl px-4 py-2 gap-2 bg-[#353740] text-white rounded-lg')
 
@@ -11,7 +11,10 @@ export const IconButton = dye('block p-2 cursor-pointer text-md', 'button', {
   default: 'text-white hover:bg-zinc-900',
   error: 'text-red-800 hover:bg-red-800 hover:text-white',
 })
-export const Button = dye('block p-3 bg-zinc-900 hover:bg-zinc-800 transition-colors duration-200 text-white cursor-pointer text-md rounded-md', 'button')
+export const Button = dye('block p-3 transition-colors duration-200 cursor-pointer text-md rounded-md', 'button', {
+  default: 'bg-zinc-900 hover:bg-zinc-800 text-white',
+  red: 'bg-red-900 hover:bg-red-800 text-white',
+})
 
 export const Form = dye('grid grid-cols-4 gap-2 my-2', 'form')
 export const Label = dye('block p-3 text-white text-md', 'label')
